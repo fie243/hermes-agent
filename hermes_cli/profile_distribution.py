@@ -19,14 +19,14 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import hermes_yaml as yaml
-
 from hermes_cli._subprocess_compat import noninteractive_git_env
 from hermes_cli.archive_safe import normalize_archive_parts
 from hermes_cli.profiles import (
-    DEFAULT_EXPORT_EXCLUDE_ROOT, profile_path_contains_private_store, profile_path_is_private,
+    DEFAULT_EXPORT_EXCLUDE_ROOT,
+    profile_path_contains_private_store,
+    profile_path_is_private,
 )
 from utils import rmtree_readonly
-
 
 MANIFEST_FILENAME = "distribution.yaml"
 ENV_TEMPLATE_FILENAME = ".env.template"

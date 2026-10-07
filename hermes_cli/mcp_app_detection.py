@@ -7,11 +7,11 @@ Only curated matches may leave it; inventory names and paths remain private.
 from __future__ import annotations
 
 import os
-from pathlib import Path
 import re
 import shutil
 import sys
 import time
+from pathlib import Path
 
 _MAX_APPLICATIONS = 16
 _APP_LABEL = re.compile(r"[A-Za-z0-9][A-Za-z0-9 ._+-]{0,79}")

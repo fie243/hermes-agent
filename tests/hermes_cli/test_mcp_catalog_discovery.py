@@ -1,12 +1,13 @@
 """Catalog HTTP contract: opt-in backend signals with real A/B/A profile config I/O."""
 
 import asyncio
-from pathlib import Path
 import sys
+from pathlib import Path
 
 import pytest
-import hermes_yaml as yaml
 from fastapi.testclient import TestClient
+
+import hermes_yaml as yaml
 
 
 @pytest.fixture

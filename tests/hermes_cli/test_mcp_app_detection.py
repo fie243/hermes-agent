@@ -1,8 +1,8 @@
 """Backend-native, read-only catalog app discovery; no app or MCP is launched."""
 
 import os
-from pathlib import Path
 import sys
+from pathlib import Path
 
 import pytest
 

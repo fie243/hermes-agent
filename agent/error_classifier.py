@@ -791,7 +791,10 @@ def _nous_welcome_tier(c: _Ctx) -> Optional[Verdict]:
     The parsed refusal rides ``error_context`` so the terminal copy can say what happened.
     """
     from hermes_cli.anon_auth import (
-        WELCOME_TIER_GATE_REASONS, parse_welcome_refusal, welcome_route_refusal)
+        WELCOME_TIER_GATE_REASONS,
+        parse_welcome_refusal,
+        welcome_route_refusal,
+    )
     status = c.status_code
     if not c.anonymous:
         # A named credential's fairshare 429 is an ordinary rate limit, whatever its body says. The

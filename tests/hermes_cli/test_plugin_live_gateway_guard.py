@@ -14,8 +14,8 @@ stub — the same fixture shape as ``tests/gateway/test_status_strict_identity_l
 
 from __future__ import annotations
 
-import queue
 import os
+import queue
 import subprocess
 import sys
 import threading
@@ -25,8 +25,7 @@ from pathlib import Path
 import psutil
 import pytest
 
-from hermes_cli import plugins_cmd
-from hermes_cli import plugins_cmd_update
+from hermes_cli import plugins_cmd, plugins_cmd_update
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
